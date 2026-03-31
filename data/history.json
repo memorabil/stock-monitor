@@ -1,51 +1,51 @@
 {
   "prod1": {
     "2026-03-31": {
-      "status": "error",
+      "status": "stock",
       "changed": false,
-      "checked_at": "2026-03-31T10:11:51.153298+00:00"
+      "checked_at": "2026-03-31T10:52:12.870975+00:00"
     }
   },
   "prod2": {
     "2026-03-31": {
-      "status": "error",
+      "status": "stock",
       "changed": false,
-      "checked_at": "2026-03-31T10:12:13.712697+00:00"
+      "checked_at": "2026-03-31T10:52:17.959654+00:00"
     }
   },
   "prod3": {
     "2026-03-31": {
-      "status": "error",
+      "status": "stock",
       "changed": false,
-      "checked_at": "2026-03-31T10:12:37.709745+00:00"
+      "checked_at": "2026-03-31T10:52:22.647710+00:00"
     }
   },
   "prod4": {
     "2026-03-31": {
-      "status": "error",
+      "status": "stock",
       "changed": false,
-      "checked_at": "2026-03-31T10:13:01.653063+00:00"
+      "checked_at": "2026-03-31T10:52:26.920105+00:00"
     }
   },
   "prod5": {
     "2026-03-31": {
-      "status": "error",
+      "status": "stock",
       "changed": false,
-      "checked_at": "2026-03-31T10:13:21.315893+00:00"
+      "checked_at": "2026-03-31T10:52:30.906557+00:00"
     }
   },
   "prod6": {
     "2026-03-31": {
-      "status": "error",
+      "status": "stock",
       "changed": false,
-      "checked_at": "2026-03-31T10:13:45.954710+00:00"
+      "checked_at": "2026-03-31T10:52:34.005793+00:00"
     }
   },
   "prod7": {
     "2026-03-31": {
-      "status": "error",
+      "status": "stock",
       "changed": false,
-      "checked_at": "2026-03-31T10:14:09.290374+00:00"
+      "checked_at": "2026-03-31T10:52:38.298661+00:00"
     }
   }
 }
