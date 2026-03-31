@@ -1,0 +1,10 @@
+[
+  {
+    "id": "example1",
+    "url": "https://www.springfarma.com/exemplu-produs",
+    "name": "Exemplu Produs",
+    "status": "unknown",
+    "lastCheck": null,
+    "lastChanged": null
+  }
+]
