@@ -67,6 +67,7 @@
   .pcard:hover { border-color: var(--border2); }
   .pcard.active { border-color: var(--blue-border); background: var(--blue-bg); }
   .pcard .pname { font-size: 12px; font-weight: 500; color: var(--text); margin-bottom: 5px; line-height: 1.3; padding-right: 18px; }
+  .pcard .pprice { font-size: 11px; color: var(--text2); margin-top: 3px; }
   .badge { font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 4px; display: inline-block; letter-spacing: 0.02em; }
   .badge-stock   { background: var(--green-bg); color: var(--green-text); }
   .badge-nostock { background: var(--red-bg);   color: var(--red-text); }
@@ -84,13 +85,7 @@
   .rm:hover { color: var(--red-text); background: var(--red-bg); }
 
   #add-area { padding: 12px; border-top: 0.5px solid var(--border); display: flex; flex-direction: column; gap: 7px; }
-  #add-url {
-    width: 100%; padding: 8px 10px; font-size: 12px;
-    border: 0.5px solid var(--border2); border-radius: var(--radius);
-    background: var(--surface); color: var(--text); font-family: var(--font);
-  }
-  #add-url::placeholder { color: var(--text3); }
-  #add-url:focus { outline: none; border-color: var(--blue-border); }
+
   .btn {
     width: 100%; padding: 8px 12px; font-size: 12px; font-weight: 500;
     border: 0.5px solid var(--border2); border-radius: var(--radius);
@@ -187,8 +182,6 @@
     </div>
     <div id="product-list"></div>
     <div id="add-area">
-      <input id="add-url" type="text" placeholder="URL produs springfarma.com…" />
-      <button class="btn" onclick="addProduct()">+ Adaugă produs</button>
       <button class="btn btn-blue" id="reload-btn" onclick="reloadData()">↻ Reîncarcă datele</button>
     </div>
   </div>
@@ -349,10 +342,11 @@ function renderSidebar() {
     const lbl = p.status === 'stock' ? 'ÎN STOC' : p.status === 'nostock' ? 'INDISPONIBIL' : p.status === 'error' ? 'EROARE' : 'NECUNOSCUT';
     const changed = p.lastChanged ? `<span class="changed-tag">↕ Schimbat ${p.lastChanged}</span>` : '';
     const local = p.localOnly ? `<span class="changed-tag" style="color:var(--text3)">⚠ Doar local</span>` : '';
+    const price = p.price ? `<span class="pprice">💰 ${p.price} lei</span>` : '';
     return `<div class="pcard ${selectedId===p.id?'active':''}" onclick="selectProduct('${p.id}')">
       <button class="rm" onclick="removeProduct('${p.id}',event)" title="Elimină">✕</button>
       <div class="pname">${p.name}</div>
-      <span class="badge ${cls}">${lbl}</span>${changed}${local}
+      <span class="badge ${cls}">${lbl}</span>${price}${changed}${local}
     </div>`;
   }).join('');
 }
