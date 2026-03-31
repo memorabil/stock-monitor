@@ -25,7 +25,7 @@ jobs:
         run: |
           pip install requests beautifulsoup4
 
-- name: Run stock checker
+      - name: Run stock checker
         run: python check_stocks.py
         env:
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
