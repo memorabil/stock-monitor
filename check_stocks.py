@@ -40,19 +40,39 @@ def check_stock(url):
             resp.raise_for_status()
             soup = BeautifulSoup(resp.text, "html.parser")
 
+            # 1. Verificare buton "Adaugă în coș" — cel mai fiabil indicator de stoc
+            #    Dacă butonul există => produsul ARE stoc
+            add_to_cart = soup.find(lambda tag: (
+                tag.name in ["button", "a", "input", "span", "div"]
+                and "ADAUG" in tag.get_text(strip=True).upper()
+                and ("CO" in tag.get_text(strip=True).upper())
+            ))
+            if add_to_cart:
+                print(f"    -> Buton 'Adaugă în coș' găsit: ÎN STOC")
+                return "stock"
+
+            # 2. Verificare clase CSS specifice
             for tag in soup.find_all(class_=lambda c: c and any(x in c.lower() for x in [
-                "stock", "availability", "disponibil", "stoc", "add-to-cart", "out-of-stock"
+                "stock", "availability", "disponibil", "stoc", "add-to-cart", "out-of-stock",
+                "unavailable", "indisponibil"
             ])):
                 tag_text = tag.get_text(strip=True).upper()
-                if any(x in tag_text for x in ["INDISPONIBIL", "OUT OF STOCK", "STOC EPUIZAT"]):
+                if any(x in tag_text for x in ["INDISPONIBIL", "OUT OF STOCK", "STOC EPUIZAT", "EPUIZAT"]):
+                    print(f"    -> Text indisponibil în clasă CSS: FĂRĂ STOC")
                     return "nostock"
-                if any(x in tag_text for x in ["ÎN STOC", "IN STOC", "IN STOCK", "DISPONIBIL", "ADAUGA IN COS", "ADAUGĂ ÎN COȘ"]):
+                if any(x in tag_text for x in ["\u00cen STOC", "IN STOC", "IN STOCK", "DISPONIBIL"]):
+                    print(f"    -> Text în stoc în clasă CSS: ÎN STOC")
                     return "stock"
 
+            # 3. Scanare text complet pagină
+            #    IMPORTANT: verificăm INDISPONIBIL înainte de ÎN STOC
+            #    pentru a evita fals-pozitive din alte secțiuni ale paginii
             full_text = soup.get_text(separator=" ", strip=True).upper()
-            if any(x in full_text for x in ["INDISPONIBIL", "OUT OF STOCK", "STOC EPUIZAT"]):
+            if any(x in full_text for x in ["INDISPONIBIL", "OUT OF STOCK", "STOC EPUIZAT", "EPUIZAT"]):
+                print(f"    -> Text indisponibil în pagină: FĂRĂ STOC")
                 return "nostock"
-            if any(x in full_text for x in ["ÎN STOC", "IN STOC", "IN STOCK", "ADAUGA IN COS"]):
+            if any(x in full_text for x in ["\u00cen STOC", "IN STOC", "IN STOCK"]):
+                print(f"    -> Text în stoc în pagină: ÎN STOC")
                 return "stock"
 
             return "unknown"
