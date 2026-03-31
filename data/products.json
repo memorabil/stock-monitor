@@ -4,7 +4,7 @@
     "url": "https://www.springfarma.com/magnevie-kids-30-comprimate-masticabile-sanofi.html",
     "name": "Magnevie Kids 30 Comprimate Masticabile",
     "status": "stock",
-    "lastCheck": "2026-03-31T11:06:14.726218+00:00",
+    "lastCheck": "2026-03-31T11:11:45.810732+00:00",
     "lastChanged": null
   },
   {
@@ -12,7 +12,7 @@
     "url": "https://www.springfarma.com/magnevie-express-20-plicuri-unidoza.html",
     "name": "Magnevie Express 20 Plicuri Unidoza",
     "status": "stock",
-    "lastCheck": "2026-03-31T11:06:19.428214+00:00",
+    "lastCheck": "2026-03-31T11:11:49.119415+00:00",
     "lastChanged": null
   },
   {
@@ -20,7 +20,7 @@
     "url": "https://www.springfarma.com/magnevie-stress-resist-ashwagandha-30-comprimate-filmate-sanofi.html",
     "name": "Magnevie Stress Resist Ashwagandha 30 Comprimate",
     "status": "stock",
-    "lastCheck": "2026-03-31T11:06:23.175160+00:00",
+    "lastCheck": "2026-03-31T11:11:53.578678+00:00",
     "lastChanged": null
   },
   {
@@ -28,7 +28,7 @@
     "url": "https://www.springfarma.com/enterogermina-forte-10-flacoane-5ml-suspensie-orala.html",
     "name": "Enterogermina Forte 10 Flacoane 5ml",
     "status": "stock",
-    "lastCheck": "2026-03-31T11:06:25.992472+00:00",
+    "lastCheck": "2026-03-31T11:11:57.926183+00:00",
     "lastChanged": null
   },
   {
@@ -36,7 +36,7 @@
     "url": "https://www.springfarma.com/magneziu-bisglicinat-premium-60-capsule-boost4life.html",
     "name": "Magneziu Bisglicinat Premium 60 Capsule Boost4Life",
     "status": "stock",
-    "lastCheck": "2026-03-31T11:06:30.739438+00:00",
+    "lastCheck": "2026-03-31T11:12:01.340617+00:00",
     "lastChanged": null
   },
   {
@@ -44,7 +44,7 @@
     "url": "https://www.springfarma.com/forcapil-anticaderea-parului-30-comprimate.html",
     "name": "Forcapil Anticaderea Parului 30 Comprimate",
     "status": "stock",
-    "lastCheck": "2026-03-31T11:06:33.575325+00:00",
+    "lastCheck": "2026-03-31T11:12:04.877200+00:00",
     "lastChanged": null
   },
   {
@@ -52,15 +52,15 @@
     "url": "https://www.springfarma.com/redoxitos-triple-action-vitamina-c-suport-imunitar-25-de-jeluri-gumate.html",
     "name": "Redoxitos Triple Action Vitamina C 25 Jeluri Gumate",
     "status": "stock",
-    "lastCheck": "2026-03-31T11:06:37.048905+00:00",
+    "lastCheck": "2026-03-31T11:12:08.293704+00:00",
     "lastChanged": null
   },
   {
-"id": "prod8",
+    "id": "prod8",
     "url": "https://www.springfarma.com/system-kollagen-11000-curcuma-ghimbir-30-flacoane-doppelherz.html",
     "name": "Curcuma + Ghimbir 11000, System Kollagen, 30 flacoane, Doppelherz",
-    "status": "pending",
-    "lastCheck": null,
+    "status": "stock",
+    "lastCheck": "2026-03-31T11:12:11.740326+00:00",
     "lastChanged": null
   }
 ]
