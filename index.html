@@ -289,7 +289,8 @@
 <script>
 const OWNER = "videne";
 const REPO = "stock-monitor";
-const RAW_BASE = `https://github.com/videne/stock-monitor/`;
+const BRANCH = "main";
+const RAW_BASE = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/data`;
 
 const MONTHS = ["Ianuarie","Februarie","Martie","Aprilie","Mai","Iunie",
                 "Iulie","August","Septembrie","Octombrie","Noiembrie","Decembrie"];
@@ -300,99 +301,173 @@ const todayStr = today.toISOString().split('T')[0];
 let products = [];
 let history = {};
 let selectedId = null;
-let localEdits = [];  // Products added locally (not yet in GitHub)
+let localEdits = [];
 
-// Load local product list from localStorage (added via UI)
+// Load local product list from localStorage
 function loadLocal() {
-  try { localEdits = JSON.parse(localStorage.getItem('sm_local_products') || '[]'); } catch(e) { localEdits = []; }
+  try {
+    localEdits = JSON.parse(localStorage.getItem('sm_local_products') || '[]');
+  } catch(e) {
+    localEdits = [];
+  }
 }
+
 function saveLocal() {
   localStorage.setItem('sm_local_products', JSON.stringify(localEdits));
+}
+
+async function fetchJson(url) {
+  const res = await fetch(url, { cache: 'no-store' });
+  if (!res.ok) {
+    throw new Error(`HTTP ${res.status} for ${url}`);
+  }
+  return await res.json();
 }
 
 async function reloadData() {
   document.getElementById('loading-msg').style.display = 'block';
   document.getElementById('content').style.display = 'none';
-  try {
-    const [pRes, hRes] = await Promise.all([
-      fetch(`${RAW_BASE}/products.json?t=${Date.now()}`),
-      fetch(`${RAW_BASE}/history.json?t=${Date.now()}`)
-    ]);
-    products = await pRes.json();
-    history = await hRes.json();
 
-    // Merge local-only products (not yet pushed to GitHub)
+  products = [];
+  history = {};
+
+  try {
+    const ts = Date.now();
+
+    products = await fetchJson(`${RAW_BASE}/products.json?t=${ts}`);
+
+    try {
+      history = await fetchJson(`${RAW_BASE}/history.json?t=${ts}`);
+    } catch (historyErr) {
+      console.warn('Nu am putut încărca history.json. Continui cu istoric gol.', historyErr);
+      history = {};
+    }
+
+    localStorage.setItem('sm_products', JSON.stringify(products));
+    localStorage.setItem('sm_history', JSON.stringify(history));
+
     localEdits.forEach(lp => {
-      if (!products.find(p => p.id === lp.id)) products.push(lp);
+      if (!products.find(p => p.id === lp.id)) {
+        products.push(lp);
+      }
     });
 
     updateLastCheck();
-  } catch(e) {
-    console.warn('Could not fetch from GitHub, using localStorage fallback.', e);
+  } catch (e) {
+    console.warn('Nu am putut încărca datele din GitHub, folosesc cache local.', e);
+
     try {
       products = JSON.parse(localStorage.getItem('sm_products') || '[]');
       history = JSON.parse(localStorage.getItem('sm_history') || '{}');
-    } catch(e2) { products = []; history = {}; }
-    // Merge local edits
+    } catch (e2) {
+      products = [];
+      history = {};
+    }
+
     localEdits.forEach(lp => {
-      if (!products.find(p => p.id === lp.id)) products.push(lp);
+      if (!products.find(p => p.id === lp.id)) {
+        products.push(lp);
+      }
     });
+
+    updateLastCheck();
   }
+
   document.getElementById('loading-msg').style.display = 'none';
   document.getElementById('content').style.display = 'block';
-  if (!selectedId && products.length > 0) selectedId = products[0].id;
+
+  if (!selectedId && products.length > 0) {
+    selectedId = products[0].id;
+  }
+
+  if (selectedId && !products.find(p => p.id === selectedId)) {
+    selectedId = products.length ? products[0].id : null;
+  }
+
   renderSidebar();
   renderCalendar();
 }
 
 function updateLastCheck() {
   let latest = null;
-  products.forEach(p => { if (p.lastCheck && (!latest || p.lastCheck > latest)) latest = p.lastCheck; });
+  products.forEach(p => {
+    if (p.lastCheck && (!latest || p.lastCheck > latest)) latest = p.lastCheck;
+  });
+
   if (latest) {
     const d = new Date(latest);
     document.getElementById('last-check').textContent = 'Ultima verificare: ' + d.toLocaleString('ro-RO');
+  } else {
+    document.getElementById('last-check').textContent = 'Ultima verificare: —';
   }
 }
 
-function genId() { return Date.now().toString(36) + Math.random().toString(36).slice(2,6); }
+function genId() {
+  return Date.now().toString(36) + Math.random().toString(36).slice(2,6);
+}
 
 function extractName(url) {
   try {
     const path = new URL(url).pathname;
     const parts = path.split('/').filter(Boolean);
-    return (parts[parts.length-1] || 'Produs').replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase()).slice(0,55);
-  } catch(e) { return url.slice(0,45); }
+    return (parts[parts.length-1] || 'Produs')
+      .replace(/-/g,' ')
+      .replace(/\b\w/g,c=>c.toUpperCase())
+      .slice(0,55);
+  } catch(e) {
+    return url.slice(0,45);
+  }
 }
 
 function addProduct() {
   const inp = document.getElementById('add-url');
   let url = inp.value.trim();
   if (!url) return;
+
   if (!url.startsWith('http')) url = 'https://' + url;
-  if (products.find(p => p.url === url)) { alert('Produsul este deja adăugat.'); return; }
-  const p = { id: genId(), url, name: extractName(url), status: 'unknown', lastCheck: null, lastChanged: null, localOnly: true };
+  if (products.find(p => p.url === url)) {
+    alert('Produsul este deja adăugat.');
+    return;
+  }
+
+  const p = {
+    id: genId(),
+    url,
+    name: extractName(url),
+    status: 'unknown',
+    lastCheck: null,
+    lastChanged: null,
+    localOnly: true
+  };
+
   products.push(p);
   localEdits.push(p);
   saveLocal();
+
   inp.value = '';
   selectedId = p.id;
+
   renderSidebar();
   renderCalendar();
-  // Show instruction for GitHub
   showGitHubTip(url, p.id, p.name);
 }
 
 function showGitHubTip(url, id, name) {
-  alert(`Produs adăugat local!\n\nPentru a activa verificarea automată zilnică:\n1. Deschide fișierul data/products.json din repo-ul tău GitHub\n2. Adaugă un obiect nou cu:\n   "id": "${id}",\n   "url": "${url}",\n   "name": "${name}",\n   "status": "unknown"\n3. Commit → GitHub Actions va verifica stocul mâine dimineață.`);
+  alert(`Produs adăugat local!\n\nPentru a activa verificarea automată zilnică:\n1. Deschide fișierul data/products.json din repo-ul tău GitHub\n2. Adaugă un obiect nou cu:\n   "id": "${id}",\n   "url": "${url}",\n   "name": "${name}",\n   "status": "unknown"\n3. Commit → GitHub Actions va verifica stocul la următoarea rulare.`);
 }
 
 function removeProduct(id, e) {
   e.stopPropagation();
   if (!confirm('Ștergi produsul din această vizualizare?\n(Nu șterge din GitHub — editează products.json manual)')) return;
+
   products = products.filter(p => p.id !== id);
   localEdits = localEdits.filter(p => p.id !== id);
   saveLocal();
-  if (selectedId === id) selectedId = products.length ? products[0].id : null;
+
+  if (selectedId === id) {
+    selectedId = products.length ? products[0].id : null;
+  }
+
   renderSidebar();
   renderCalendar();
 }
@@ -405,16 +480,31 @@ function selectProduct(id) {
 
 function renderSidebar() {
   const list = document.getElementById('product-list');
+
   if (!products.length) {
     list.innerHTML = '<div style="padding:20px 12px;text-align:center;color:var(--text3);font-size:12px">Niciun produs adăugat</div>';
     return;
   }
+
   list.innerHTML = products.map(p => {
-    const cls = p.status === 'stock' ? 'badge-stock' : p.status === 'nostock' ? 'badge-nostock' : p.status === 'error' ? 'badge-error' : 'badge-unknown';
-    const lbl = p.status === 'stock' ? 'ÎN STOC' : p.status === 'nostock' ? 'FĂRĂ STOC' : p.status === 'error' ? 'EROARE' : 'NECUNOSCUT';
+    const cls =
+      p.status === 'stock' ? 'badge-stock' :
+      p.status === 'nostock' ? 'badge-nostock' :
+      p.status === 'error' ? 'badge-error' :
+      'badge-unknown';
+
+    const lbl =
+      p.status === 'stock' ? 'ÎN STOC' :
+      p.status === 'nostock' ? 'FĂRĂ STOC' :
+      p.status === 'error' ? 'EROARE' :
+      'NECUNOSCUT';
+
     const changed = p.lastChanged ? `<span class="changed-tag">↕ Schimbat ${p.lastChanged}</span>` : '';
     const local = p.localOnly ? `<span class="changed-tag" style="color:var(--text3)">⚠ Doar local</span>` : '';
-    const price = (p.status === 'nostock' || !p.price) ? `<span class="pprice">FĂRĂ STOC</span>` : `<span class="pprice">💰 ${p.price} lei</span>`;
+    const price = (p.status === 'nostock' || !p.price)
+      ? `<span class="pprice">FĂRĂ STOC</span>`
+      : `<span class="pprice">💰 ${p.price} lei</span>`;
+
     return `<div class="pcard ${selectedId===p.id?'active':''}" onclick="selectProduct('${p.id}')">
       <button class="rm" onclick="removeProduct('${p.id}',event)" title="Elimină">✕</button>
       <div class="pname">${p.name}</div>
@@ -426,13 +516,15 @@ function renderSidebar() {
 function getStats(pid, year) {
   const h = history[pid] || {};
   let stock = 0, nostock = 0, unknown = 0, changes = 0;
+
   Object.entries(h).forEach(([date, v]) => {
-    if (!date.startsWith(year+'-')) return;
+    if (!date.startsWith(year + '-')) return;
     if (v.status === 'stock') stock++;
     else if (v.status === 'nostock') nostock++;
     else unknown++;
     if (v.changed) changes++;
   });
+
   return { stock, nostock, unknown, changes };
 }
 
@@ -462,6 +554,7 @@ function renderCalendar() {
   const s = getStats(selectedId, yr);
   const total = s.stock + s.nostock;
   const pct = total > 0 ? Math.round((s.stock / total) * 100) : 0;
+
   stats.innerHTML = `
     <div class="stat-card"><div class="stat-label">Zile în stoc</div><div class="stat-val" style="color:var(--green-text)">${s.stock}</div></div>
     <div class="stat-card"><div class="stat-label">Zile fără stoc</div><div class="stat-val" style="color:var(--red-text)">${s.nostock}</div></div>
@@ -491,12 +584,14 @@ function buildMonth(year, month, prod) {
 
   let dow = new Date(year, month, 1).getDay();
   dow = dow === 0 ? 6 : dow - 1;
+
   for (let i = 0; i < dow; i++) {
-    const e = document.createElement('div'); e.className = 'dcell';
+    const e = document.createElement('div');
+    e.className = 'dcell';
     mgrid.appendChild(e);
   }
 
-  const days = new Date(year, month+1, 0).getDate();
+  const days = new Date(year, month + 1, 0).getDate();
   const h = history[prod.id] || {};
 
   for (let d = 1; d <= days; d++) {
@@ -504,13 +599,15 @@ function buildMonth(year, month, prod) {
     const cell = document.createElement('div');
     cell.className = 'dcell';
     cell.textContent = d;
+
     const entry = h[ds];
     const isFuture = ds > todayStr;
 
     if (isFuture) cell.classList.add('d-future');
     else if (!entry) cell.classList.add('d-unknown');
     else if (entry.status === 'stock') cell.classList.add('d-stock');
-    else cell.classList.add('d-nostock');
+    else if (entry.status === 'nostock') cell.classList.add('d-nostock');
+    else cell.classList.add('d-unknown');
 
     if (ds === todayStr) cell.classList.add('d-today');
     if (entry && entry.changed) cell.classList.add('d-changed');
@@ -519,28 +616,41 @@ function buildMonth(year, month, prod) {
       cell.addEventListener('mouseenter', e => showTT(e, ds, entry));
       cell.addEventListener('mouseleave', hideTT);
     }
+
     mgrid.appendChild(cell);
   }
+
   card.appendChild(mgrid);
   return card;
 }
 
 function showTT(e, ds, entry) {
   const tt = document.getElementById('tt');
-  const st = entry.status === 'stock' ? '<span style="color:var(--green-text)">ÎN STOC</span>' : entry.status === 'nostock' ? '<span style="color:var(--red-text)">FĂRĂ STOC</span>' : 'Necunoscut';
+  const st =
+    entry.status === 'stock'
+      ? '<span style="color:var(--green-text)">ÎN STOC</span>'
+      : entry.status === 'nostock'
+        ? '<span style="color:var(--red-text)">FĂRĂ STOC</span>'
+        : 'Necunoscut';
+
   tt.innerHTML = `<strong>${ds}</strong><br>${st}${entry.changed ? '<br><span style="color:var(--amber-text)">↕ Status schimbat</span>' : ''}${entry.checked_at ? `<br><span style="color:var(--text3);font-size:10px">Verificat ${new Date(entry.checked_at).toLocaleTimeString('ro-RO',{hour:'2-digit',minute:'2-digit'})}</span>` : ''}`;
   tt.style.display = 'block';
   tt.style.left = (e.clientX + 14) + 'px';
   tt.style.top = (e.clientY - 12) + 'px';
 }
-function hideTT() { document.getElementById('tt').style.display = 'none'; }
+
+function hideTT() {
+  document.getElementById('tt').style.display = 'none';
+}
 
 function initYearSel() {
   const sel = document.getElementById('year-sel');
   const yr = today.getFullYear();
-  for (let y = yr-1; y <= yr+1; y++) {
+
+  for (let y = yr - 1; y <= yr + 1; y++) {
     const o = document.createElement('option');
-    o.value = y; o.textContent = y;
+    o.value = y;
+    o.textContent = y;
     if (y === yr) o.selected = true;
     sel.appendChild(o);
   }
