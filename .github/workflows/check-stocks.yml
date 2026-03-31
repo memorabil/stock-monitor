@@ -1,0 +1,37 @@
+name: Check Stock Daily
+
+on:
+  schedule:
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check-stocks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Run stock checker
+        run: python check_stocks.py
+
+      - name: Commit and push updated data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "Stock Monitor Bot"
+          git add data/history.json data/products.json
+          git diff --staged --quiet || git commit -m "📦 Stock check $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
