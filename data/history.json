@@ -216,6 +216,13 @@
       "checked_at": "2026-04-30T16:09:25.412386+00:00",
       "price": "76.40",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:58:44.061509+00:00",
+      "price": "76.40",
+      "price_changed": false
     }
   },
   "prod2": {
@@ -433,6 +440,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:09:33.440362+00:00",
+      "price": "40.90",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:58:47.606171+00:00",
       "price": "40.90",
       "price_changed": false
     }
@@ -654,6 +668,13 @@
       "checked_at": "2026-04-30T16:09:36.538814+00:00",
       "price": "79.40",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:58:52.717321+00:00",
+      "price": "67.49",
+      "price_changed": true
     }
   },
   "prod4": {
@@ -871,6 +892,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:09:41.315862+00:00",
+      "price": "52.05",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:59:03.041838+00:00",
       "price": "52.05",
       "price_changed": false
     }
@@ -1092,6 +1120,13 @@
       "checked_at": "2026-04-30T16:09:45.454579+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": true,
+      "checked_at": "2026-05-01T11:59:07.309345+00:00",
+      "price": "30.49",
+      "price_changed": true
     }
   },
   "prod6": {
@@ -1311,6 +1346,13 @@
       "checked_at": "2026-04-30T16:09:52.062527+00:00",
       "price": "19.89",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:59:11.415438+00:00",
+      "price": "23.40",
+      "price_changed": true
     }
   },
   "prod7": {
@@ -1528,6 +1570,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:09:55.766553+00:00",
+      "price": "14.90",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:59:14.835896+00:00",
       "price": "14.90",
       "price_changed": false
     }
@@ -1749,6 +1798,13 @@
       "checked_at": "2026-04-30T16:10:05.600444+00:00",
       "price": "62.40",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:59:18.967171+00:00",
+      "price": "62.40",
+      "price_changed": false
     }
   },
   "prod9": {
@@ -1968,6 +2024,13 @@
       "checked_at": "2026-04-30T16:10:14.226330+00:00",
       "price": "12.40",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:59:24.751636+00:00",
+      "price": "9.92",
+      "price_changed": true
     }
   },
   "prod10": {
@@ -2185,6 +2248,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:10:17.745736+00:00",
+      "price": "44.90",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:59:27.843712+00:00",
       "price": "44.90",
       "price_changed": false
     }
@@ -2406,6 +2476,13 @@
       "checked_at": "2026-04-30T16:10:22.699484+00:00",
       "price": "8.40",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:59:35.396848+00:00",
+      "price": "8.40",
+      "price_changed": false
     }
   },
   "prod12": {
@@ -2623,6 +2700,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:10:30.189086+00:00",
+      "price": "4.50",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:59:42.255729+00:00",
       "price": "4.50",
       "price_changed": false
     }
@@ -2844,6 +2928,13 @@
       "checked_at": "2026-04-30T16:10:34.464254+00:00",
       "price": "1.60",
       "price_changed": true
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:59:48.118617+00:00",
+      "price": "1.60",
+      "price_changed": false
     }
   },
   "prod14": {
@@ -3063,6 +3154,13 @@
       "checked_at": "2026-04-30T16:10:39.323671+00:00",
       "price": "32.40",
       "price_changed": true
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:59:53.320264+00:00",
+      "price": "39.90",
+      "price_changed": true
     }
   },
   "prod15": {
@@ -3280,6 +3378,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:10:42.222066+00:00",
+      "price": "20.90",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T11:59:57.168580+00:00",
       "price": "20.90",
       "price_changed": false
     }
@@ -3501,6 +3606,13 @@
       "checked_at": "2026-04-30T16:10:48.470745+00:00",
       "price": "49.90",
       "price_changed": true
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:01.838670+00:00",
+      "price": "49.90",
+      "price_changed": false
     }
   },
   "prod17": {
@@ -3718,6 +3830,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:10:52.213396+00:00",
+      "price": "46.90",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:05.637794+00:00",
       "price": "46.90",
       "price_changed": false
     }
@@ -3939,6 +4058,13 @@
       "checked_at": "2026-04-30T16:10:59.816675+00:00",
       "price": "121.86",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:13.074586+00:00",
+      "price": "121.86",
+      "price_changed": false
     }
   },
   "prod19": {
@@ -4156,6 +4282,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:11:04.466685+00:00",
+      "price": "27.90",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:16.162604+00:00",
       "price": "27.90",
       "price_changed": false
     }
@@ -4377,6 +4510,13 @@
       "checked_at": "2026-04-30T16:11:07.515485+00:00",
       "price": "36.90",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:19.560882+00:00",
+      "price": "36.90",
+      "price_changed": false
     }
   },
   "prod21": {
@@ -4596,6 +4736,13 @@
       "checked_at": "2026-04-30T16:11:16.590081+00:00",
       "price": "19.90",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:27.162285+00:00",
+      "price": "20.90",
+      "price_changed": true
     }
   },
   "prod22": {
@@ -4813,6 +4960,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:11:28.539058+00:00",
+      "price": "24.40",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:30.765077+00:00",
       "price": "24.40",
       "price_changed": false
     }
@@ -5034,6 +5188,13 @@
       "checked_at": "2026-04-30T16:11:35.682340+00:00",
       "price": "31.40",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:33.303900+00:00",
+      "price": "23.55",
+      "price_changed": true
     }
   },
   "prod24": {
@@ -5253,6 +5414,13 @@
       "checked_at": "2026-04-30T16:11:40.516636+00:00",
       "price": "45.24",
       "price_changed": true
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:36.961639+00:00",
+      "price": "45.24",
+      "price_changed": false
     }
   },
   "prod25": {
@@ -5470,6 +5638,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:11:48.353323+00:00",
+      "price": "147.90",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:43.851989+00:00",
       "price": "147.90",
       "price_changed": false
     }
@@ -5691,6 +5866,13 @@
       "checked_at": "2026-04-30T16:11:53.946240+00:00",
       "price": "89.18",
       "price_changed": true
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:48.097885+00:00",
+      "price": "89.18",
+      "price_changed": false
     }
   },
   "prod27": {
@@ -5908,6 +6090,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:11:57.364420+00:00",
+      "price": "89.90",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:51.299509+00:00",
       "price": "89.90",
       "price_changed": false
     }
@@ -6129,6 +6318,13 @@
       "checked_at": "2026-04-30T16:12:04.223242+00:00",
       "price": "54.90",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:00:57.451736+00:00",
+      "price": "54.90",
+      "price_changed": false
     }
   },
   "prod29": {
@@ -6346,6 +6542,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:12:08.757225+00:00",
+      "price": "64.90",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:01:05.034331+00:00",
       "price": "64.90",
       "price_changed": false
     }
@@ -6567,6 +6770,13 @@
       "checked_at": "2026-04-30T16:12:12.880607+00:00",
       "price": "295",
       "price_changed": true
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:01:08.702529+00:00",
+      "price": "41.90",
+      "price_changed": true
     }
   },
   "prod31": {
@@ -6785,6 +6995,13 @@
       "changed": false,
       "checked_at": "2026-04-30T16:12:20.636972+00:00",
       "price": "36.40",
+      "price_changed": true
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:01:18.111583+00:00",
+      "price": "35.40",
       "price_changed": true
     }
   },
@@ -7005,6 +7222,13 @@
       "checked_at": "2026-04-30T16:12:25.979716+00:00",
       "price": "31.33",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:01:24.987433+00:00",
+      "price": "48.20",
+      "price_changed": true
     }
   },
   "prod33": {
@@ -7222,6 +7446,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:12:33.656245+00:00",
+      "price": "116.90",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:01:28.058824+00:00",
       "price": "116.90",
       "price_changed": false
     }
@@ -7443,6 +7674,13 @@
       "checked_at": "2026-04-30T16:12:41.890438+00:00",
       "price": "42.84",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:01:32.370919+00:00",
+      "price": "39.78",
+      "price_changed": true
     }
   },
   "prod35": {
@@ -7660,6 +7898,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:12:47.079900+00:00",
+      "price": "68.78",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:01:39.267626+00:00",
       "price": "68.78",
       "price_changed": false
     }
@@ -7881,6 +8126,13 @@
       "checked_at": "2026-04-30T16:12:50.792934+00:00",
       "price": "141.40",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:01:42.576380+00:00",
+      "price": "141.40",
+      "price_changed": false
     }
   },
   "prod37": {
@@ -8098,6 +8350,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:12:56.259074+00:00",
+      "price": "27.90",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:01:47.708631+00:00",
       "price": "27.90",
       "price_changed": false
     }
@@ -8319,6 +8578,13 @@
       "checked_at": "2026-04-30T16:13:04.046511+00:00",
       "price": "43.90",
       "price_changed": true
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:01:53.496515+00:00",
+      "price": "43.90",
+      "price_changed": false
     }
   },
   "prod39": {
@@ -8536,6 +8802,13 @@
       "status": "stock",
       "changed": false,
       "checked_at": "2026-04-30T16:13:09.833115+00:00",
+      "price": "80.40",
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:02:01.269050+00:00",
       "price": "80.40",
       "price_changed": false
     }
@@ -8757,6 +9030,13 @@
       "checked_at": "2026-04-30T16:13:14.847875+00:00",
       "price": "16.40",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:02:07.448343+00:00",
+      "price": "16.40",
+      "price_changed": false
     }
   },
   "prod41": {
@@ -8976,6 +9256,13 @@
       "checked_at": "2026-04-30T16:13:18.553604+00:00",
       "price": "5.90",
       "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "stock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:02:14.109416+00:00",
+      "price": "5.90",
+      "price_changed": false
     }
   },
   "prod42": {
@@ -9193,6 +9480,13 @@
       "status": "nostock",
       "changed": false,
       "checked_at": "2026-04-30T16:13:32.241261+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-05-01": {
+      "status": "nostock",
+      "changed": false,
+      "checked_at": "2026-05-01T12:02:20.023300+00:00",
       "price": null,
       "price_changed": false
     }
