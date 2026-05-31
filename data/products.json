@@ -3,8 +3,8 @@
     "id": "prod1",
     "url": "https://www.springfarma.com/rilastil-aqua-intense-72-h-gel-crema-hidratanta-40ml.html",
     "name": "Rilastil Aqua Intense 72H Gel Crema Hidratanta 40ml",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:04:14.256673+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:10:51.911633+00:00",
     "lastChanged": null,
     "price": "76.40"
   },
@@ -12,8 +12,8 @@
     "id": "prod2",
     "url": "https://www.springfarma.com/impruvis-probiotic-fast-melt-cu-aroma-de-capsuni-si-zmeura-10-plicuri.html",
     "name": "Impruvis Probiotic Fast Melt Capsuni si Zmeura 10 Plicuri",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:04:33.505440+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:10:54.391262+00:00",
     "lastChanged": null,
     "price": "40.90"
   },
@@ -21,8 +21,8 @@
     "id": "prod3",
     "url": "https://www.springfarma.com/magneziu-bisglicinat-premium-60-capsule-boost4life.html",
     "name": "Magneziu Bisglicinat Premium 60 Capsule Boost4Life",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:04:48.123920+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:02.047703+00:00",
     "lastChanged": null,
     "price": "67.49"
   },
@@ -30,8 +30,8 @@
     "id": "prod4",
     "url": "https://www.springfarma.com/forcapil-anticaderea-parului-30-comprimate.html",
     "name": "Forcapil Anticaderea Parului 30 Comprimate",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:05:06.079893+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:05.316388+00:00",
     "lastChanged": null,
     "price": "52.05"
   },
@@ -39,17 +39,17 @@
     "id": "prod5",
     "url": "https://www.springfarma.com/beres-magneziu-b6-50-tablete-10-tablete-cadou.html",
     "name": "Beres Magneziu B6 50 Tablete + 10 Tablete Cadou",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:05:21.200165+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:10.072391+00:00",
     "lastChanged": "2026-05-01",
-    "price": "30.49"
+    "price": "47.40"
   },
   {
     "id": "prod6",
     "url": "https://www.springfarma.com/ulei-premium-cu-efect-de-intarire-pentru-par-rosemary-and-mint-75-ml-difeel.html",
     "name": "Ulei Premium Intarire Par Rosemary and Mint 75ml Difeel",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:05:39.928225+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:13.570106+00:00",
     "lastChanged": null,
     "price": "23.40"
   },
@@ -57,8 +57,8 @@
     "id": "prod7",
     "url": "https://www.springfarma.com/aspenter-75-mg-x-28-comprimate-gastrorezistente.html",
     "name": "Aspenter 75mg 28 Comprimate Gastrorezistente",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:05:55.780077+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:17.643704+00:00",
     "lastChanged": null,
     "price": "14.90"
   },
@@ -66,8 +66,8 @@
     "id": "prod8",
     "url": "https://www.springfarma.com/moller-s-omega-3-aroma-portocala-36-pestisori-gumati.html",
     "name": "Moller's Omega 3 Aroma Portocala 36 Pestisori Gumati",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:06:09.747042+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:24.987406+00:00",
     "lastChanged": null,
     "price": "62.40"
   },
@@ -75,8 +75,8 @@
     "id": "prod9",
     "url": "https://www.springfarma.com/always-discreet-liners-long-plus-28-bucati.html",
     "name": "Always Discreet Liners Long Plus 28 Bucati",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:06:23.414692+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:30.060627+00:00",
     "lastChanged": null,
     "price": "9.92"
   },
@@ -84,8 +84,8 @@
     "id": "prod10",
     "url": "https://www.springfarma.com/bandelete-testare-glicemie-contour-plus-50-bucati-html.html",
     "name": "Bandelete Testare Glicemie Contour Plus 50 Bucati",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:06:40.020667+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:35.799413+00:00",
     "lastChanged": null,
     "price": "44.90"
   },
@@ -93,8 +93,8 @@
     "id": "prod11",
     "url": "https://www.springfarma.com/xylo-nasal-1mgml-picaturi-nazale-solutie-x-10-ml.html",
     "name": "Xylo Nasal 1mg/ml Picaturi Nazale Solutie 10ml",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:06:55.600118+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:39.403979+00:00",
     "lastChanged": null,
     "price": "8.40"
   },
@@ -102,8 +102,8 @@
     "id": "prod12",
     "url": "https://www.springfarma.com/plasturi-termici-cu-efect-de-incalzire-8-ore-1-buc-sanitayaki.html",
     "name": "Plasturi Termici Efect Incalzire 8 Ore 1 Buc Sanitayaki",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:07:12.849510+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:44.328851+00:00",
     "lastChanged": null,
     "price": "4.50"
   },
@@ -111,17 +111,17 @@
     "id": "prod13",
     "url": "https://www.springfarma.com/paracetamol-500mg-20-comprimate-antibiotice.html",
     "name": "Paracetamol 500mg 20 Comprimate",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:07:26.794120+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:50.933539+00:00",
     "lastChanged": null,
-    "price": "1.60"
+    "price": "2.60"
   },
   {
     "id": "prod14",
     "url": "https://www.springfarma.com/enterogermina-forte-10-flacoane-5ml-suspensie-orala.html",
     "name": "Enterogermina Forte 10 Flacoane 5ml Suspensie Orala",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:07:43.132845+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:55.816249+00:00",
     "lastChanged": null,
     "price": "39.90"
   },
@@ -129,17 +129,17 @@
     "id": "prod15",
     "url": "https://www.springfarma.com/hofigal-gemoderivat-mladite-zmeur-libidou-crescut.html",
     "name": "Hofigal Gemoderivat Mladite Zmeur Libidou Crescut",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:07:57.892242+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:11:58.263304+00:00",
     "lastChanged": null,
-    "price": "20.90"
+    "price": "19.86"
   },
   {
     "id": "prod16",
     "url": "https://www.springfarma.com/bio-vitality-nikvorm-sirop-pentru-eliminarea-parazitilor-intestinali-60ml.html",
     "name": "Bio Vitality Nikvorm Sirop Eliminare Paraziti Intestinali 60ml",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:08:13.299437+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:08.807453+00:00",
     "lastChanged": null,
     "price": "49.90"
   },
@@ -147,8 +147,8 @@
     "id": "prod17",
     "url": "https://www.springfarma.com/teste-de-masurare-a-glicemiei-codefree.html",
     "name": "Teste Masurare Glicemie Codefree",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:08:28.048317+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:14.028773+00:00",
     "lastChanged": null,
     "price": "46.90"
   },
@@ -156,8 +156,8 @@
     "id": "prod18",
     "url": "https://www.springfarma.com/lyprinol-complex-lipidic-marin-60-capsule.html",
     "name": "Lyprinol Complex Lipidic Marin 60 Capsule",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:08:43.378579+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:17.582144+00:00",
     "lastChanged": null,
     "price": "121.86"
   },
@@ -165,17 +165,17 @@
     "id": "prod19",
     "url": "https://www.springfarma.com/enroush-absorbante-bumbac-organic-super-10-bucati.html",
     "name": "Enroush Absorbante Bumbac Organic Super 10 Bucati",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:08:59.894910+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:20.033752+00:00",
     "lastChanged": null,
-    "price": "27.90"
+    "price": "22.41"
   },
   {
     "id": "prod20",
     "url": "https://www.springfarma.com/coenzima-q10-dual-30-capsule.html",
     "name": "Coenzima Q10 Dual 30 Capsule",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:09:15.624354+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:24.062887+00:00",
     "lastChanged": null,
     "price": "36.90"
   },
@@ -183,8 +183,8 @@
     "id": "prod21",
     "url": "https://www.springfarma.com/parasinus-20-comprimate.html",
     "name": "Parasinus 20 Comprimate",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:09:35.854446+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:28.459513+00:00",
     "lastChanged": null,
     "price": "20.90"
   },
@@ -192,17 +192,17 @@
     "id": "prod22",
     "url": "https://www.springfarma.com/magneziu-bisglicinat-30-capsule-cosmo-pharm.html",
     "name": "Magneziu Bisglicinat 30 Capsule Cosmo Pharm",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:09:52.148256+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:33.954256+00:00",
     "lastChanged": null,
-    "price": "24.40"
+    "price": "28.90"
   },
   {
     "id": "prod23",
     "url": "https://www.springfarma.com/naturalis-rehidrafort-cu-aroma-de-portocale-10-plicuri.html",
     "name": "Naturalis Rehidrafort Aroma Portocale 10 Plicuri",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:10:08.125544+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:38.846628+00:00",
     "lastChanged": null,
     "price": "23.55"
   },
@@ -210,8 +210,8 @@
     "id": "prod24",
     "url": "https://www.springfarma.com/benesio-tonico-forte-10-ml-tonic-pentru-organism-10-flacoane.html",
     "name": "Benesio Tonico Forte 10ml Tonic Organism 10 Flacoane",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:10:24.157505+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:42.625949+00:00",
     "lastChanged": null,
     "price": "45.24"
   },
@@ -219,8 +219,8 @@
     "id": "prod25",
     "url": "https://www.springfarma.com/colagen-lichid-ch-alpha-plus-30-fiole-buvabile-gelita-health.html",
     "name": "Colagen Lichid CH-Alpha Plus 30 Fiole Buvabile Gelita Health",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:10:40.886243+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:46.434783+00:00",
     "lastChanged": null,
     "price": "147.90"
   },
@@ -228,8 +228,8 @@
     "id": "prod26",
     "url": "https://www.springfarma.com/forcapil-formula-fortifianta-pentru-par-si-unghii-180-capsule.html",
     "name": "Forcapil Formula Fortifianta Par si Unghii 180 Capsule",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:10:56.919091+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:50.601938+00:00",
     "lastChanged": null,
     "price": "89.18"
   },
@@ -237,8 +237,8 @@
     "id": "prod27",
     "url": "https://www.springfarma.com/crema-dentara-cu-aroma-de-capsuni-tooth-mousse-40-g-gc-dental.html",
     "name": "Crema Dentara Aroma Capsuni Tooth Mousse 40g GC Dental",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:11:11.511266+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:54.845048+00:00",
     "lastChanged": null,
     "price": "89.90"
   },
@@ -246,8 +246,8 @@
     "id": "prod28",
     "url": "https://www.springfarma.com/nestle-optifibre-125-g.html",
     "name": "Nestle Optifibre 125g",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:11:26.857417+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:12:59.569155+00:00",
     "lastChanged": null,
     "price": "54.90"
   },
@@ -255,17 +255,17 @@
     "id": "prod29",
     "url": "https://www.springfarma.com/magnerot-500-mg-100-comprimate-protector-cardiac.html",
     "name": "Magnerot 500mg 100 Comprimate Protector Cardiac",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:11:43.895072+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:02.144313+00:00",
     "lastChanged": null,
-    "price": "64.90"
+    "price": "61.90"
   },
   {
     "id": "prod30",
     "url": "https://www.springfarma.com/sun-d3-5000-ui-30-capsule-sun-wave-pharma.html",
     "name": "Sun D3 5000 UI 30 Capsule Sun Wave Pharma",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:12:00.480030+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:05.665741+00:00",
     "lastChanged": null,
     "price": "41.90"
   },
@@ -273,8 +273,8 @@
     "id": "prod31",
     "url": "https://www.springfarma.com/glucomannan-fibre-pentru-slabit-90-capsule-rotta-natura.html",
     "name": "Glucomannan Fibre Pentru Slabit 90 Capsule Rotta Natura",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:12:21.803071+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:09.920908+00:00",
     "lastChanged": null,
     "price": "35.40"
   },
@@ -282,8 +282,8 @@
     "id": "prod32",
     "url": "https://www.springfarma.com/benesio-hepafort-30-capsule.html",
     "name": "Benesio Hepafort 30 Capsule",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:12:34.512449+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:14.569932+00:00",
     "lastChanged": null,
     "price": "48.20"
   },
@@ -291,17 +291,17 @@
     "id": "prod33",
     "url": "https://www.springfarma.com/collanol-20-capsule-adjuvant-articulatii-sanatoase.html",
     "name": "Collanol 20 Capsule Adjuvant Articulatii Sanatoase",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:12:48.398184+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:20.091620+00:00",
     "lastChanged": null,
-    "price": "116.90"
+    "price": "109.40"
   },
   {
     "id": "prod34",
     "url": "https://www.springfarma.com/neuroalfa-20-capsule-moi-benesio.html",
     "name": "Neuroalfa 20 Capsule Moi Benesio",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:13:06.868439+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:24.041133+00:00",
     "lastChanged": null,
     "price": "39.78"
   },
@@ -309,8 +309,8 @@
     "id": "prod35",
     "url": "https://www.springfarma.com/ulei-de-spalare-xerolact-1-l-rilastil.html",
     "name": "Ulei de Spalare Xerolact 1L Rilastil",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:13:21.116179+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:30.016164+00:00",
     "lastChanged": null,
     "price": "68.78"
   },
@@ -318,8 +318,8 @@
     "id": "prod36",
     "url": "https://www.springfarma.com/imuno-fattore-m-20-comprimate-laborest-italia.html",
     "name": "Imuno Fattore M 20 Comprimate Laborest Italia",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:13:37.277558+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:37.930419+00:00",
     "lastChanged": null,
     "price": "141.40"
   },
@@ -327,26 +327,26 @@
     "id": "prod37",
     "url": "https://www.springfarma.com/enroush-absorbante-bumbac-organic-normale-12-bucati.html",
     "name": "Enroush Absorbante Bumbac Organic Normale 12 Bucati",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:13:55.198117+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:43.585917+00:00",
     "lastChanged": null,
-    "price": "27.90"
+    "price": "22.41"
   },
   {
     "id": "prod38",
     "url": "https://www.springfarma.com/magnevie-kids-30-comprimate-masticabile-sanofi.html",
     "name": "Magnevie Kids 30 Comprimate Masticabile Sanofi",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:14:09.664351+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:47.391458+00:00",
     "lastChanged": null,
-    "price": "43.90"
+    "price": "30.73"
   },
   {
     "id": "prod39",
     "url": "https://www.springfarma.com/bioderma-atoderm-gel-de-dus-1l.html",
     "name": "Bioderma Atoderm Gel de Dus 1L",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:14:30.754411+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:50.262250+00:00",
     "lastChanged": null,
     "price": "80.40"
   },
@@ -354,8 +354,8 @@
     "id": "prod40",
     "url": "https://www.springfarma.com/rhinxyl-ha-1-mgml-10-ml-spray-nazal.html",
     "name": "Rhinxyl HA 1mg/ml 10ml Spray Nazal",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:14:45.817863+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:55.469170+00:00",
     "lastChanged": null,
     "price": "16.40"
   },
@@ -363,8 +363,8 @@
     "id": "prod41",
     "url": "https://www.springfarma.com/panadol-rapid-500-mg-12-comprimate-filmate.html",
     "name": "Panadol Rapid 500mg 12 Comprimate Filmate",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:15:02.989306+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:13:59.517271+00:00",
     "lastChanged": null,
     "price": "5.90"
   },
@@ -372,9 +372,9 @@
     "id": "prod42",
     "url": "https://www.springfarma.com/beres-vitamina-d3-junior-800-ui-50-comprimate.html",
     "name": "Beres Vitamina D3 Junior 800 UI 50 Comprimate",
-    "status": "error",
-    "lastCheck": "2026-05-30T12:15:18.891267+00:00",
+    "status": "stock",
+    "lastCheck": "2026-05-31T12:14:05.641250+00:00",
     "lastChanged": null,
-    "price": "20.32"
+    "price": "30.60"
   }
 ]
