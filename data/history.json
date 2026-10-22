@@ -1420,6 +1420,13 @@
       "checked_at": "2026-10-21T15:49:37.373530+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:47:13.809911+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod2": {
@@ -2841,6 +2848,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:49:55.296692+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:47:28.129215+00:00",
       "price": null,
       "price_changed": false
     }
@@ -4266,6 +4280,13 @@
       "checked_at": "2026-10-21T15:50:10.922658+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:47:41.504236+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod4": {
@@ -5687,6 +5708,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:50:27.500528+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:47:57.123388+00:00",
       "price": null,
       "price_changed": false
     }
@@ -7112,6 +7140,13 @@
       "checked_at": "2026-10-21T15:50:45.906049+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:48:13.222804+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod6": {
@@ -8533,6 +8568,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:50:58.339423+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:48:28.499684+00:00",
       "price": null,
       "price_changed": false
     }
@@ -9958,6 +10000,13 @@
       "checked_at": "2026-10-21T15:51:16.762929+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:48:44.014798+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod8": {
@@ -11379,6 +11428,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:51:36.319189+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:48:56.073800+00:00",
       "price": null,
       "price_changed": false
     }
@@ -12804,6 +12860,13 @@
       "checked_at": "2026-10-21T15:51:53.036963+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:49:09.569529+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod10": {
@@ -14225,6 +14288,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:52:07.241948+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:49:24.783258+00:00",
       "price": null,
       "price_changed": false
     }
@@ -15650,6 +15720,13 @@
       "checked_at": "2026-10-21T15:52:21.072638+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:49:42.931867+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod12": {
@@ -17071,6 +17148,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:52:38.728149+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:49:57.451734+00:00",
       "price": null,
       "price_changed": false
     }
@@ -18496,6 +18580,13 @@
       "checked_at": "2026-10-21T15:52:54.123130+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:50:10.414075+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod14": {
@@ -19917,6 +20008,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:53:07.620225+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:50:25.820709+00:00",
       "price": null,
       "price_changed": false
     }
@@ -21342,6 +21440,13 @@
       "checked_at": "2026-10-21T15:53:23.141928+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:50:40.237868+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod16": {
@@ -22763,6 +22868,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:53:39.857539+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:50:56.624031+00:00",
       "price": null,
       "price_changed": false
     }
@@ -24188,6 +24300,13 @@
       "checked_at": "2026-10-21T15:53:54.121190+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:51:11.876816+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod18": {
@@ -25609,6 +25728,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:54:09.624817+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:51:28.689054+00:00",
       "price": null,
       "price_changed": false
     }
@@ -27034,6 +27160,13 @@
       "checked_at": "2026-10-21T15:54:23.363937+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:51:43.846519+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod20": {
@@ -28455,6 +28588,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:54:40.852516+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:51:58.678023+00:00",
       "price": null,
       "price_changed": false
     }
@@ -29880,6 +30020,13 @@
       "checked_at": "2026-10-21T15:54:58.781504+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:52:12.384730+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod22": {
@@ -31301,6 +31448,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:55:12.950106+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:52:26.286268+00:00",
       "price": null,
       "price_changed": false
     }
@@ -32726,6 +32880,13 @@
       "checked_at": "2026-10-21T15:55:28.142318+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:52:42.261703+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod24": {
@@ -34147,6 +34308,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:55:43.535017+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:52:57.229592+00:00",
       "price": null,
       "price_changed": false
     }
@@ -35572,6 +35740,13 @@
       "checked_at": "2026-10-21T15:55:58.738142+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:53:15.599439+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod26": {
@@ -36993,6 +37168,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:56:12.624865+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:53:29.109755+00:00",
       "price": null,
       "price_changed": false
     }
@@ -38418,6 +38600,13 @@
       "checked_at": "2026-10-21T15:56:27.469137+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:53:43.447539+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod28": {
@@ -39839,6 +40028,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:56:44.222626+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:53:59.367606+00:00",
       "price": null,
       "price_changed": false
     }
@@ -41264,6 +41460,13 @@
       "checked_at": "2026-10-21T15:56:59.812490+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:54:15.013169+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod30": {
@@ -42685,6 +42888,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:57:15.020419+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:54:30.489555+00:00",
       "price": null,
       "price_changed": false
     }
@@ -44110,6 +44320,13 @@
       "checked_at": "2026-10-21T15:57:32.607641+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:54:46.665648+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod32": {
@@ -45531,6 +45748,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:57:46.774623+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:55:01.013952+00:00",
       "price": null,
       "price_changed": false
     }
@@ -46956,6 +47180,13 @@
       "checked_at": "2026-10-21T15:58:01.573947+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:55:16.371453+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod34": {
@@ -48377,6 +48608,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:58:17.874374+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:55:29.651085+00:00",
       "price": null,
       "price_changed": false
     }
@@ -49802,6 +50040,13 @@
       "checked_at": "2026-10-21T15:58:33.079252+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:55:44.679594+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod36": {
@@ -51223,6 +51468,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:58:50.833463+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:56:02.923013+00:00",
       "price": null,
       "price_changed": false
     }
@@ -52648,6 +52900,13 @@
       "checked_at": "2026-10-21T15:59:04.627719+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:56:18.725353+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod38": {
@@ -54069,6 +54328,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:59:20.928929+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:56:33.776921+00:00",
       "price": null,
       "price_changed": false
     }
@@ -55494,6 +55760,13 @@
       "checked_at": "2026-10-21T15:59:35.488681+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:56:45.105016+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod40": {
@@ -56915,6 +57188,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T15:59:52.516139+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:56:56.837394+00:00",
       "price": null,
       "price_changed": false
     }
@@ -58340,6 +58620,13 @@
       "checked_at": "2026-10-21T16:00:08.812959+00:00",
       "price": null,
       "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:57:13.562867+00:00",
+      "price": null,
+      "price_changed": false
     }
   },
   "prod42": {
@@ -59761,6 +60048,13 @@
       "status": "error",
       "changed": false,
       "checked_at": "2026-10-21T16:00:24.430313+00:00",
+      "price": null,
+      "price_changed": false
+    },
+    "2026-10-22": {
+      "status": "error",
+      "changed": false,
+      "checked_at": "2026-10-22T15:57:30.343465+00:00",
       "price": null,
       "price_changed": false
     }
